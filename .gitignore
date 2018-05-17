@@ -1,0 +1,15 @@
+#Configuration files
+inc/config.php
+.env
+DEBUG
+
+#Per-installation directories
+inc/vendor
+tgstation/
+composer.lock
+icons/
+
+#Cache & devops
+tmp/
+.db
+phpinfo.php
