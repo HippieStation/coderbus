@@ -12,6 +12,9 @@
     body {
       padding-top: 5rem;
     }
+    span.badge.gh-badge {
+      text-shadow: 0 0 2px black;
+    }
     </style>
     <title>Coderbus GBP Readout</title>
   </head>
