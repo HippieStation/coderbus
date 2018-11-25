@@ -5,7 +5,7 @@ if(file_exists(ROOTPATH.'/inc/vendor/autoload.php')){
 } else {
   die("Cannot find /inc/vendor/autoload.php. Did you run composer install?");
 }
-$gbp = new remoteFile('https://coderbus.hippiestation.com/pr_balances.json');
+$gbp = new remoteFile('https://tools.hippiestation.com/pr_balances.json');
 $labels1 = new remoteFile('https://api.github.com/repos/HippieStation/HippieStation/labels');
 $labels2 = new remoteFile('https://api.github.com/repos/HippieStation/HippieStation?page=2');
 
