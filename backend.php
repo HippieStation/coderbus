@@ -5,9 +5,9 @@ if(file_exists(ROOTPATH.'/inc/vendor/autoload.php')){
 } else {
   die("Cannot find /inc/vendor/autoload.php. Did you run composer install?");
 }
-$gbp = new remoteFile('https://tools.tgstation13.org/pr_balances.json');
-$labels1 = new remoteFile('https://api.github.com/repos/tgstation/tgstation/labels');
-$labels2 = new remoteFile('https://api.github.com/repos/tgstation/tgstation/labels?page=2');
+$gbp = new remoteFile('https://coderbus.hippiestation.com/pr_balances.json');
+$labels1 = new remoteFile('https://api.github.com/repos/HippieStation/HippieStation/labels');
+$labels2 = new remoteFile('https://api.github.com/repos/HippieStation/HippieStation?page=2');
 
 $gbp = json_decode($gbp,TRUE);
 arsort($gbp);
