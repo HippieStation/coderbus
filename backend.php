@@ -8,13 +8,15 @@ if(file_exists(ROOTPATH.'/inc/vendor/autoload.php')){
 $gbp = new remoteFile('https://tools.hippiestation.com/pr_balances.json');
 $labels1 = new remoteFile('https://api.github.com/repos/HippieStation/HippieStation/labels');
 $labels2 = new remoteFile('https://api.github.com/repos/HippieStation/HippieStation/labels?page=2');
+$labels3 = new remoteFile('https://api.github.com/repos/HippieStation/HippieStation/labels?page=3');
 
 $gbp = json_decode($gbp,TRUE);
 arsort($gbp);
 
 $labels1 = json_decode($labels1);
 $labels2 = json_decode($labels2);
-$labels = array_merge($labels1,$labels2);
+$labels2 = json_decode($labels3);
+$labels = array_merge($labels1,$labels2,$labels3);
 $label_values = array(
   'Fix' => 2,
   'Refactor' => 2,
