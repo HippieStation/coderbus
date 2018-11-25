@@ -21,7 +21,7 @@
   <body>
     <nav class="navbar navbar-expand-md navbar-dark navbar- fixed-top bg-dark">
       <div class="container" id="navcontainer">
-        <a class="navbar-brand" href="https://atlantaned.space/statbus/"> Back to Statbus </a>
+        <a class="navbar-brand" href="https://statbus.hippiestation.com"> Back to Statbus </a>
       </div>
     </nav>
     <div class="container">
@@ -44,7 +44,7 @@
             <?php foreach ($gbp as $g => $n):?>
             <tr>
               <th>
-                <a href='https://github.com/tgstation/tgstation/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3A<?php echo $g;?>' target="_blank" rel="noopener noreferrer">
+                <a href='https://github.com/HippieStation/HippieStation/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3A<?php echo $g;?>' target="_blank" rel="noopener noreferrer">
                   <?php echo $g;?> <i class='fas fa-external-link-alt'></i>
                 </a> 
               </th>
@@ -70,7 +70,7 @@
               <tr>
                 <td>
                   <span class="badge gh-badge" style="background: #<?php echo $label->color;?>">
-                      <a class="text-white" href="https://github.com/tgstation/tgstation/labels/<?php echo $label->name;?>" target="_blank" rel="noopener noreferrer"><?php echo $label->name;?>
+                      <a class="text-white" href="https://github.com/HippieStation/HippieStation/labels/<?php echo $label->name;?>" target="_blank" rel="noopener noreferrer"><?php echo $label->name;?>
                       </a>
                     </span>
                 </td>
