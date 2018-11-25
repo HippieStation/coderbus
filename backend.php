@@ -7,7 +7,7 @@ if(file_exists(ROOTPATH.'/inc/vendor/autoload.php')){
 }
 $gbp = new remoteFile('https://tools.hippiestation.com/pr_balances.json');
 $labels1 = new remoteFile('https://api.github.com/repos/HippieStation/HippieStation/labels');
-$labels2 = new remoteFile('https://api.github.com/repos/HippieStation/HippieStation?page=2');
+$labels2 = new remoteFile('https://api.github.com/repos/HippieStation/HippieStation/labels?page=2');
 
 $gbp = json_decode($gbp,TRUE);
 arsort($gbp);
