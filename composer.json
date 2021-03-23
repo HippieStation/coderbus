@@ -3,7 +3,7 @@
     "vendor-dir": "inc/vendor"
   },
   "require": {
-    "guzzlehttp/guzzle": "^6.3",
+    "guzzlehttp/guzzle": "^7.3",
     "erusev/parsedown": "^1.6",
     "kevinrob/guzzle-cache-middleware": "^3.2",
     "doctrine/cache": "^1.7",
